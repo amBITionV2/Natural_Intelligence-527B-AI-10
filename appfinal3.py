@@ -18,13 +18,13 @@ except FileNotFoundError:
     exit()
 
 # ---- Configure OpenRouter ----
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = ""
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 # ---- Configure Twilio ----
-ACCOUNT_SID = "SKaaf9a6b4696c310e86f25ec7620fbf1b"
-AUTH_TOKEN = "JVgJV7j5IeUrilnC40VeP3RKUH61MxnY"
-FROM_NUMBER = "whatsapp:+14155238886"
+ACCOUNT_SID = '"
+AUTH_TOKEN = ""
+FROM_NUMBER = ""
 
 client = Client(ACCOUNT_SID, AUTH_TOKEN)
 app = Flask(__name__)
@@ -202,4 +202,5 @@ def whatsapp_bot():
 
 # ---- Main execution ----
 if __name__ == "__main__":
+
     app.run(host="0.0.0.0", port=5000)
